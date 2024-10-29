@@ -3,12 +3,13 @@ public class ChoiceQuestion11 extends Question11 {
 
     public ChoiceQuestion11() {
         super();
-        choiceNumber = 1;
+        this.choiceNumber = 1;
     }
+
     public void addChoice(String choice, boolean correct) {
         addText(choiceNumber + ": " + choice);
         if (correct) {
-            setAnswer("" + choiceNumber);
+            setAnswer(String.valueOf(choiceNumber));
         }
         choiceNumber++;
     }
